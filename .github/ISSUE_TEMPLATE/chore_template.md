@@ -1,6 +1,6 @@
 ---
 name: Chore
-about: Work that's not a new feature, and not a bug.
+about: Work that's not a new feature, and not a bug
 labels: chore
 ---
 
