@@ -4,12 +4,15 @@ about: Work that's not a new feature, and not a bug
 labels: chore
 ---
 
-**Chore summary**
+## Summary
+
 What is the goal of this chore.
 
-**Tasks**
+## Tasks
+
 - [ ] Need to do this
 - [ ] And do that
 
-**Additional context**
+## Additional context
+
 Add any other context about the chore here.
