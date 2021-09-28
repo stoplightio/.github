@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea
-labels: feature request
+labels: t/feature
 ---
 
 ## User story.
