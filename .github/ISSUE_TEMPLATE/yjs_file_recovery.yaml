@@ -30,19 +30,19 @@ body:
     validations:
       required: true
   - type: input
-    id: branch
+    id: last_good
     attributes:
       label: Last known good date/time (UTC) (to use for recovery)
     validations:
       required: true
   - type: input
-    id: branch
+    id: first_bad
     attributes:
       label: First known bad date/time (UTC) (if available, for use debugging root causes)
     validations:
       required: false
   - type: input
-    id: branch
+    id: logrocket_url
     attributes:
       label: LogRocket URL
     validations:
