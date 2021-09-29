@@ -6,12 +6,6 @@ assignees:
   - "@stoplightio/infrastructure"
 body:
   - type: input
-    id: zendesk
-    attributes:
-      label: Zendesk URL
-    validations:
-      required: false
-  - type: input
     id: workspace
     attributes:
       label: Workspace Slug
@@ -39,6 +33,12 @@ body:
     id: first_bad
     attributes:
       label: First known bad date/time (UTC) (if available, for use debugging root causes)
+    validations:
+      required: false
+  - type: input
+    id: zendesk
+    attributes:
+      label: Zendesk URL
     validations:
       required: false
   - type: input
