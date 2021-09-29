@@ -1,9 +1,9 @@
 name: Web Project File Recovery
-about: Create a manual devops request to recover lost files
+description: Create a manual devops request to recover lost files
 title: "recover yjs_document for: {customer}" 
 labels: ["p/urgent", "team/enablers", "t/manual-ops"]
 assignees:
-  - @stoplightio/infrastructure
+  - "@stoplightio/infrastructure"
 body:
   - type: input
     id: zendesk
