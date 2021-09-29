@@ -1,0 +1,86 @@
+name: Web Project File Recovery
+about: Create a manual devops request to recover lost files
+title: "recover yjs_document for: {customer}" 
+labels: ["p/urgent", "team/enablers", "t/manual-ops"]
+assignees:
+  - @stoplightio/infrastructure
+body:
+  - type: input
+    id: zendesk
+    attributes:
+      label: Zendesk URL
+    validations:
+      required: false
+  - type: input
+    id: workspace
+    attributes:
+      label: Workspace Slug
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project Slug
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Branch Slug
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Last known good date/time (UTC) (to use for recovery)
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: First known bad date/time (UTC) (if available, for use debugging root causes)
+    validations:
+      required: false
+  - type: input
+    id: branch
+    attributes:
+      label: LogRocket URL
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        # Summary
+
+        A customer’s Web Project appears to have been overwritten with a completely blank one, losing all the historical data.
+        We need an hourly backup from on or before "Last known good date/time" listed above for the corresponding
+        `yjs_document`.
+
+        ## For devops
+
+        Here is an exact recipe to get the JSON required to extract the files:
+
+        ```sql
+        stoplight=# \t
+        Tuples only is on.
+        stoplight=# \a
+        Output format is unaligned.
+        stoplight=# \o recovery.json
+        stoplight=# SELECT ROW_TO_JSON(result) FROM (
+          SELECT yjs_documents.id as id,
+                 octet_length(update) as size,
+                 encode(update::bytea, 'hex') as update
+          FROM yjs_documents
+          JOIN branches ON yjs_documents.branch_id = branches.id
+          JOIN projects ON branches.project_id = projects.id
+          JOIN workspaces ON projects.workspace_id = workspaces.id
+          WHERE workspaces.slug = 'WORKSPACE'
+          AND projects.slug = 'PROJECT'
+          AND branches.slug = 'BRANCH'
+        ) as result;
+        stoplight=# quit
+        ```
+
+        If you could acquire that JSON `recovery.json` file and attach it to this issue in a comment, then Pierogi Platoon can
+        turn it back into a folder & zip file it to the customer, then they can import the folder, so there's no need to touch
+        the prod database.
