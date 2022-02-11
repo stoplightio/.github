@@ -25,14 +25,14 @@ We believe in a design-first approach to API development, so we created products
   <img src="./assets/mission-team.png" width="600" height="300" />
 </p>
 
-# Social Good
+# Community Impact
 
-At Stoplight, we believe the positive impact we can make on the world isn’t limited to the API space. That’s why we work with organizations like , , and . Check out our  to learn how we offset the carbon footprint of every Stoplight employee and became a climate positive workforce.
+At Stoplight, we believe the positive impact we can make on the world isn’t limited to the API space. APIs are all about connection, and at Stoplight we like to apply that connection to the community as well. Here are the community pillars we support:
 
-<div style="display: flex; justify-content: center;">
-  <a href="https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d">
-    <p style="width: 300px; height: 150px; background-color: forestgreen; border-radius: 20px; padding:10px;">
-      <img src="./assets/ecologi.png">
-    </p>
-  </a>
-</div>
+* **Diversity and Inclusion in STEM**- Fueling the next generation of tech talents means supporting STEM-based education nonprofits and efforts to create a more equitable and inclusive tech pipeline.
+* **Environmental Impact** - We work with organizations like Ecologi, Urban Roots, and OSMI. Check out our Ecologi Forest to learn how we offset the carbon footprint of every Stoplight employee and become a climate positive workforce.
+* **Open Source Contributions** - We believe in benefiting the entire developer community, which is why we offer open-source tools to meet your API mocking, linting, and documentation needs. Any and all are welcome to utilize these complementary tools, add to them, and be a part of the community. [Learn More](https://stoplight.io/open-source/)
+
+[![We offset our carbon footprint via Ecologi](https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?black=true&landscape=true#gh-light-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
+
+[![We offset our carbon footprint via Ecologi](https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?white=true&landscape=true#gh-dark-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
