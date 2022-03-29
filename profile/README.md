@@ -34,7 +34,13 @@ At Stoplight, we believe the positive impact we can make on the world isn’t li
 
 
 <picture>
-  <source srcset="…_dark.png" media="(prefers-color-scheme: dark)">
-  <img alt="ALT_TXT" src="…_light.png#gh-light-mode-only">
-  <span style="display: none"><img alt="ALT_TXT" src="…_dark.png#gh-dark-mode-only"></span>
+  <source srcset="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?white=true&landscape=true" media="(prefers-color-scheme: dark)">
+  <img alt="ALT_TXT" src="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?white=true&landscape=true#gh-light-mode-only">
+  <span style="display: none"><img alt="ALT_TXT" src="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?white=true&landscape=true#gh-dark-mode-only"></span>
+</picture>
+
+<picture>
+  <source srcset="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?green=true&landscape=true" media="(prefers-color-scheme: light)">
+  <img alt="ALT_TXT" src="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?green=true&landscape=true#gh-light-mode-only">
+  <span style="display: none"><img alt="ALT_TXT" src="https://api.ecologi.com/badges/cpw/5db9f5263b387200179a1d3d?green=true&landscape=true#gh-light-mode-only"></span>
 </picture>
