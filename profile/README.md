@@ -32,5 +32,6 @@ At Stoplight, we believe the positive impact we can make on the world isn’t li
 * **Open Source Contributions**
     * We believe in benefiting the entire developer community, which is why we offer open-source tools to meet your API mocking, linting, and documentation needs. Any and all are welcome to utilize these complementary tools, add to them, and be a part of the community. [Learn more!](https://stoplight.io/open-source/)
 
-[![We offset our carbon footprint via Ecologi!](https://camo.githubusercontent.com/03574c07a378b77fc700ddd338a41c1d262626e7a204c7bbe6d3cb0bfe9067e9/68747470733a2f2f6170692e65636f6c6f67692e636f6d2f6261646765732f6370772f3564623966353236336233383732303031373961316433643f626c61636b3d74727565266c616e6473636170653d747275652367682d6c696768742d6d6f64652d6f6e6c79#gh-light-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
-[![We offset our carbon footprint via Ecologi!](https://camo.githubusercontent.com/ea4def36e1997afeecb09eb8ee0f35f6825d86d8d93ecfbb53776413fdbc4a21/68747470733a2f2f6170692e65636f6c6f67692e636f6d2f6261646765732f6370772f3564623966353236336233383732303031373961316433643f77686974653d74727565266c616e6473636170653d747275652367682d6461726b2d6d6f64652d6f6e6c79#gh-dark-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
+
+[![We offset our carbon footprint via Ecologi!](https://user-images.githubusercontent.com/3588798/161165655-6105eea2-4689-4158-966e-7ece11f0495d.png#gh-dark-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
+[![We offset our carbon footprint via Ecologi!](https://user-images.githubusercontent.com/3588798/161165648-9b35a7bf-7f6a-401e-bc36-2df04b4cb933.png#gh-light-mode-only)](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
