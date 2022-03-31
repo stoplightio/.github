@@ -33,4 +33,5 @@ At Stoplight, we believe the positive impact we can make on the world isn’t li
     * We believe in benefiting the entire developer community, which is why we offer open-source tools to meet your API mocking, linting, and documentation needs. Any and all are welcome to utilize these complementary tools, add to them, and be a part of the community. [Learn more!](https://stoplight.io/open-source/)
 
 ![We offset our carbon footprint via Ecologi!](./assets/ecologi-black-27k.png#gh-light-mode-only)
-![We offset our carbon footprint via Ecologi!](./assets/ecologi-black-27k.png#gh-dark-mode-only)
+![We offset our carbon footprint via Ecologi!](./assets/ecologi-light-27k.png#gh-dark-mode-only)
+### [We offset our carbon footprint via Ecologi!](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
