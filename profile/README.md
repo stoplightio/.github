@@ -1,4 +1,4 @@
-![](./assets/Sales-LinkedIn-Banner-1.png)
+![](https://raw.githubusercontent.com/stoplightio/.github/master/profile/assets/Sales-LinkedIn-Banner-1.png)
 
 # About Stoplight
 Stoplight is a collaborative API design platform that enables you to build excellent APIs and create scalable API programs that fuel innovation.  
@@ -28,5 +28,5 @@ At Stoplight, we believe the positive impact we can make on the world isn’t li
     * We believe in benefiting the entire developer community, which is why we offer open-source tools to meet your API mocking, linting, and documentation needs. Any and all are welcome to utilize these complementary tools, add to them, and be a part of the community. [Learn more!](https://stoplight.io/open-source/)
 
 ### [We offset our carbon footprint via Ecologi!](https://ecologi.com/stoplightinc?r=5db9f5263b387200179a1d3d)
-![We offset our carbon footprint via Ecologi!](https://user-images.githubusercontent.com/3588798/161165655-6105eea2-4689-4158-966e-7ece11f0495d.png#gh-dark-mode-only)
-![We offset our carbon footprint via Ecologi!](https://user-images.githubusercontent.com/3588798/161165648-9b35a7bf-7f6a-401e-bc36-2df04b4cb933.png#gh-light-mode-only)
+![We offset our carbon footprint via Ecologi!](https://raw.githubusercontent.com/stoplightio/.github/master/profile/assets/ecologi-white-27k.png#gh-dark-mode-only)
+![We offset our carbon footprint via Ecologi!](https://raw.githubusercontent.com/stoplightio/.github/master/profile/assets/ecologi-black-27k.png#gh-light-mode-only)
