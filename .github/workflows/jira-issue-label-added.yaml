@@ -39,7 +39,7 @@ jobs:
           *Issue Link:* ${{ github.event.issue.html_url }}
 
           ${{ github.event.issue.body }}
-        fields: '{"customfield_18545": ${{ inputs.team-name }}}'
+        fields: '{"customfield_18545": ${{ inputs.team-name }}}' # Stoplight Team
 
     - name: Add Comment
       if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
