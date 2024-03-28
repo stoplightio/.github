@@ -13,8 +13,6 @@ jobs:
     steps:
     - name: Login
       uses: atlassian/gajira-login@v3
-      with:
-        team-name: ${{ inputs.team-name }}
       env:
         JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
@@ -41,6 +39,7 @@ jobs:
           *Issue Link:* ${{ github.event.issue.html_url }}
 
           ${{ github.event.issue.body }}
+        fields: '{"Stoplight Team": ${{ inputs.team-name }}}'
 
     - name: Add Comment
       if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
