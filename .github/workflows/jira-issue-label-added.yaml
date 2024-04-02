@@ -27,10 +27,10 @@ jobs:
     - name: Log
       run: echo "Found issue ${{ steps.search.outputs.issue }}"
 
-    - name: Create
-      id: create
+    - name: Create With Team
+      id: create-with-team
       uses: atlassian/gajira-create@v3
-      if: steps.search.outputs.issue == ''
+      if: steps.search.outputs.issue == '' && inputs.team-name != '' 
       with:
         project: ${{ vars.SMARTBEAR_JIRA_PROJECT }}
         issuetype: Task
@@ -39,10 +39,23 @@ jobs:
           *Issue Link:* ${{ github.event.issue.html_url }}
 
           ${{ github.event.issue.body }}
-        fields: '{"customfield_18545": ${{ inputs.team-name }}}' # Stoplight Team
+        fields: '{"customfield_18545": {"value": "${{ inputs.team-name }}"}}' # Stoplight Team
+
+    - name: Create Without Team
+      id: create-without-team
+      uses: atlassian/gajira-create@v3
+      if: steps.search.outputs.issue == '' && inputs.team-name == '' 
+      with:
+        project: ${{ vars.SMARTBEAR_JIRA_PROJECT }}
+        issuetype: Task
+        summary: '${{ github.event.repository.name }}#${{ github.event.issue.number }}: ${{ github.event.issue.title }}'
+        description: |
+          *Issue Link:* ${{ github.event.issue.html_url }}
+
+          ${{ github.event.issue.body }}
 
     - name: Add Comment
-      if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
+      if: steps.search.outputs.issue == '' && (steps.create-with-team.outputs.issue != '' || steps.create-without-team.outputs.issue != '')
       uses: actions/github-script@v6
       with:
         github-token: ${{secrets.GITHUB_TOKEN }}
@@ -51,5 +64,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: "This ticket has been labeled <i>jira</i>. A tracking ticket in Stoplight's Jira (<a href='https://smartbear.atlassian.net/browse/${{steps.create.outputs.issue}}'><code>${{steps.create.outputs.issue}}</code></a>) has been created."
+            body: "This ticket has been labeled <i>jira</i>. A tracking ticket in Stoplight's Jira (<a href='https://smartbear.atlassian.net/browse/${{steps.create.outputs.issue}}'><code>${{steps.create-with-team.outputs.issue || steps.create-without-team.outputs.issue}}</code></a>) has been created."
           })
