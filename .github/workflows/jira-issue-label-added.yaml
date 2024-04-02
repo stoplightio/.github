@@ -66,5 +66,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: "This ticket has been labeled <i>jira</i>. A tracking ticket in Stoplight's Jira (<a href='https://smartbear.atlassian.net/browse/${{ JIRA_ISSUE_NUMBER }}'><code>${{ JIRA_ISSUE_NUMBER }}</code></a>) has been created."
+            body: "This ticket has been labeled <i>jira</i>. A tracking ticket in Stoplight's Jira (<a href='https://smartbear.atlassian.net/browse/${{ env.JIRA_ISSUE_NUMBER }}'><code>${{ env.JIRA_ISSUE_NUMBER }}</code></a>) has been created."
           })
