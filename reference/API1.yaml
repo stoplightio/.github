@@ -17,6 +17,8 @@ paths:
         description: Id of an existing user.
     get:
       summary: Get User Info by User ID
+      x-stoplight:
+        id: izlwncbpdkq22
       tags: []
       responses:
         '200':
@@ -39,8 +41,6 @@ paths:
           description: User Not Found
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
-      x-stoplight:
-        id: kyjpx0k97h4yq
     patch:
       summary: Update User Information
       operationId: patch-users-userId
